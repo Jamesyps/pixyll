@@ -1,16 +1,16 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       James Wigger
+email:       james.s.wigger@gmail.com
+author:      James Wigger
+description: "Coming later."
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://jameswigger.co.uk"
 
 # Google analytics
 google_analytics:
 
 # Optional features
-animated:           false
+animated:           true
 show_related_posts: false
 show_post_footers:  false
 
@@ -20,9 +20,9 @@ disqus_shortname:
 
 # Social icons
 show_social_icons: false
-github_username:
+github_username: jamesyps
 stackoverflow_id:
-twitter_username:
+twitter_username: jamesyps
 google_plus_id:
 linkedin_username:
 bitcoin_url:

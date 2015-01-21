@@ -57,6 +57,11 @@ body {
   width: 100%;
 }
 
+.site-header {
+  padding: 25px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
 .site-header a {
   color: #333;
   font-weight: 300;
@@ -310,7 +315,7 @@ h6,
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 900;
   line-height: 1.2;
-  margin: 1em 0 0.5em;
+  margin: 0 0 0.5em;
 }
 
 .social-icons {
