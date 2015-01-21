@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      Pixyll has Pagination
-date:       2014-06-08 11:21:29
-summary:    This is an empty post to illustrate the pagination component with Pixyll.
-categories: test testing
+title:      Well, hello
+date:       2015-01-21 11:21:29
+summary:    For once my online presence is in sync with my own head, they're both completely empty.
+categories:
 ---
 
-This is an empty post to illustrate the pagination component with Pixyll.
+*This may not currently look like much, but soon I will re-fill this with my previous articles and some new photography journeys I am planning on undertaking in 2015*
