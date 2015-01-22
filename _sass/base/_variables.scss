@@ -1,0 +1,59 @@
+// ==========================================================================
+
+// VARIABLES
+// Primary Styling Configurations
+
+// ========================================================================== 
+
+// COLOR PALETTES
+// ==========================================================================
+$palettes: (
+	'backgrounds': (
+		base: #000
+	),
+	'accents': (
+		action: #F00
+	)
+);
+
+// FONT FAMILIES
+// ==========================================================================
+$fonts: (
+	headers: (
+		stack: ('lato', 'helvetica', sans-serif),
+		weights: (
+			regular:  300,
+			bold:     900
+		)
+	),
+	body: (
+		stack: ('lato', 'helvetica', sans-serif),
+		weights: (
+			regular:  300,
+			bold:     900
+		)
+	),
+);
+
+$base-font-size: 17;
+$base-font-line: 26;
+
+// DIRECTORIES
+// ==========================================================================
+$base-image-path:   '../images/';
+$base-icon-path:    '#{$base-image-path}icons/';
+$base-graphic-path: '#{$base-image-path}graphics/';
+$base-font-path:    '../fonts/';
+
+// LAYOUT
+// ==========================================================================
+$base-body-max-width: 990px;
+$base-body-width: 90%;
+
+$layers: (
+	"base":    1,
+	"banner":  2,
+	"nav":     3,
+	"overlay": 4,
+	"modal":   5
+);

@@ -1,0 +1,16 @@
+//
+// Styleguide Tweaks
+//
+
+//
+// Styleguide Tweaks - Layout
+//
+
+// Float clearing fix
+// 
+// markup: <div class="+clearfix"></div>
+//
+// Styleguide Tweaks - Layout - Clear Fix
+@include tweak(clearfix) {
+	@extend %clearfix;
+}

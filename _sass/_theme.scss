@@ -1,0 +1,71 @@
+// VENDOR - Default fall backs & external .scss files.
+// ==========================================================================
+@import 'vendor/normalize', 'vendor/csstyle', 'vendor/jacket', 'vendor/gridset';
+
+// BASE - Base variables, mixins and placeholders that *do not* change throughout build.
+// ==========================================================================
+@import 'base/variables', 'base/mixins', 'base/tweaks';
+
+// ==========================================================================
+
+// DOCUMENT FORMATTING
+
+// ==========================================================================
+
+%clearfix {
+	&:after {
+		display: block;
+		clear: both;
+		visibility: hidden;
+		height: 0;
+		font-size: 0;
+		content: ' ';
+	}
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+
+	@include font('body', 'regular');
+	@include font-size($base-font-size);
+	@include line-height($base-font-line);
+
+
+	@include jacket(ie) {
+		margin: 0;
+		padding: 0;
+		min-width: $base-body-max-width; // this is the important part
+	}
+}
+
+.wrapper {
+	@extend %clearfix;
+	
+	position: relative;
+	margin: 0 auto;
+	
+	width: $base-body-width;
+	max-width: $base-body-max-width;
+
+	@include jacket(ie) {
+		width: $base-body-max-width;
+	}
+}
+
+// ==========================================================================
+
+// HEADER & PRIMARY NAV
+// Main site header
+
+// ==========================================================================
+
+
+// ==========================================================================
+
+// FOOTER
+// Site Footer
+
+// ==========================================================================

@@ -1,0 +1,295 @@
+//
+// Styleguide Mixins
+//
+
+//
+// Styleguide Mixins - Fonts
+//
+
+// REM font size with a PX fallback
+// 
+// markup: @include font-size($size-value);
+// 
+// $size-value - Font size in PT (eg 16)
+//
+// Styleguide Mixins - Fonts - Font Size		
+@mixin font-size($size-value:12) {
+
+	@include jacket(ie) {
+		font-size: $size-value + px;
+	}
+
+	@include jacket(responsive) {
+		font-size: (0.1 * $size-value) + rem;
+	}
+
+}
+
+// REM line height with a PX fallback
+// 
+// markup: @include line-height($size-value);
+// 
+// $size-value - Line height in PT (eg 16)
+//
+// Styleguide Mixins - Fonts - Line Height
+@mixin line-height($size-value:12) {
+
+	@include jacket(ie) {
+		line-height: $size-value + px;
+	}
+
+	@include jacket(responsive) {
+		line-height: (0.1 * $size-value) + rem;
+	}
+
+}
+
+// Font naming mixin for organised font families
+// 
+// markup: @include font($font-label, $weight-label)
+// 
+// $font-label - The name of the font (see _variables.scss)
+// $weight-label - The weighting of the font, EG: 'bold' (see _variables.scss)
+//
+// Styleguide Mixins - Fonts - Font
+@mixin font($font-label, $weight-label) {
+	$fonts: (body: (stack: 'Arial', weights:(regular: 400, bold: 600))) !global !default;
+	$font-weight: 400;
+	$font-stack: 'None';
+ 
+	// Match given type with fontstacks
+	@each $font-key, $font in $fonts {
+		@if $font-label == $font-key {
+			// get stack and weights
+			@each $elem, $value in $font {
+				@if $elem == 'stack' {
+					$font-stack: $value;
+				}
+ 
+				@if $elem == 'weights' {
+					@each $weight-key, $weight in $value {
+						@if $weight-key == $weight-label {
+							$font-weight: $weight;
+						}
+					}
+				}
+			}
+		}
+	}
+ 
+	// set CSS
+	font-family: $font-stack;
+	font-weight: $font-weight;
+}
+
+// Font-face generator with webkit rendering fix
+// 
+// markup: @include font-face($font-name, $file-name);
+// 
+// $font-name - The name of the font for use with 'font-family'
+// $file-name - The base name of the font file without extension
+//
+// Styleguide Mixins - Fonts - Font Face
+@mixin font-face($font-name, $file-name) {
+	@font-face {
+		font-family: $font-name;
+		src: url('#{$base-font-path}#{$file-name}.eot');
+		src: url('#{$base-font-path}#{$file-name}.eot?#iefix') format('embedded-opentype'),
+			url('#{$base-font-path}#{$file-name}.woff') format('woff'),
+			url('#{$base-font-path}#{$file-name}.ttf') format('truetype'),
+			url('#{$base-font-path}#{$file-name}.svg##{$font-name}') format('svg');
+  	}
+
+  	// Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+	@media screen and (-webkit-min-device-pixel-ratio: 0) {
+		@font-face {
+			font-family: $font-name;
+			src: url('#{$base-font-path}#{$file-name}.svg##{$font-name}') format('svg');
+		}
+  	}
+}
+
+//
+// Styleguide Mixins - Images
+//
+
+@function icon-property($data, $key) {
+	@if(map-has-key($data, $key))
+	{
+		@return map-get($data, $key);
+	}
+	@else
+	{
+		@warn "'#{$key}' is not found in the icons map";
+		@return null;
+	}
+}
+
+// Produces a list of icon classes using background images - see images/_base.scss for configuration.
+// 
+// markup: @include icons($icons, $retina: false);
+// 
+// $icons - A map of icon names and sizes
+// $retina - Boolean for outputting @2x assets
+//
+// Styleguide Mixins - Images - Icons
+@mixin icons($icons, $retina: false) {
+
+	.icon {
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center center;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+	}
+
+	@each $type, $data in $icons {
+		.icon-#{$type} {
+
+			width: icon-property($data, 'width');
+			height: icon-property($data, 'height');
+
+			@each $icon in icon-property($data, 'images') {
+
+				&.#{$icon} {
+					@if $retina == true {
+						background-image: icon('#{$icon}@2x.png');
+						background-size: icon-property($data, 'width') icon-property($data, 'height');
+					}
+
+					@else {
+						background-image: icon('#{$icon}.png');
+					}
+				}
+			}
+		}
+	}
+}
+
+// Shrinks a background image by a multiplier including the parent element
+// 
+// markup: @include shrink($w, $h, $multiplier: 0.7);
+// 
+// $w - Original width of the image
+// $h - Original height of the image
+// $multiplier - Decimal value to resize the image by, for example 0.5 = 50% width.
+//
+// Styleguide Mixins - Images - Shrink
+@mixin shrink($w, $h, $multiplier: 0.7) {
+	$new-width: ($w * $multiplier);
+	$new-height: ($h * $multiplier);
+
+	width: $new-width;
+	height: $new-height;
+	background-size: $new-width $new-height;
+}
+
+//
+// Styleguide Mixins - Media Queries
+//
+
+// Outputs a retina specific media query for High DPI screens.
+// 
+// markup: @include hdpi($ratio: 1.3) {
+//    ...
+// }
+// 
+// $ratio - Default 1.3 for a minimum of Google's Nexus 7. Can be set higher for 1080p screens.
+//
+// Styleguide Mixins - Media Queries - High DPI
+@mixin hdpi($ratio: 1.3) {
+	@media only screen and (-webkit-min-device-pixel-ratio: $ratio),
+	only screen and (min--moz-device-pixel-ratio: $ratio),
+	only screen and (-o-min-device-pixel-ratio: #{$ratio}/1),
+	only screen and (min-resolution: #{round($ratio*96)}dpi),
+	only screen and (min-resolution: #{$ratio}dppx)
+	{
+		@content;
+	}
+}
+
+//
+// Styleguide Mixins - Fallbacks
+//
+
+// IE 6+ fallback for transparent background colours
+// 
+// markup: @include jacket(ie) {
+// 	@include ie-transparency($color, $alpha);
+// }
+// 
+// $colour - The background colour
+// $alpha - Level of transparency in decimal form, EG 0.9 = 90%
+//
+// Styleguide Mixins - Fallbacks - IE Transparency
+@mixin ie-transparency($color, $alpha) {
+	$rgba: rgba($color, $alpha);
+	$ie-hex-str: ie-hex-str($rgba);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+	zoom: 1;
+}
+
+//
+// Styleguide Mixins - Functions
+//
+
+// Returns the base image directory
+// 
+// markup: background-image: image('myimage.png');
+// 
+// $image - The image file, EG myimage.png
+//
+// Styleguide Mixins - Functions - Image Path
+@function image($image) {
+	@return url('#{$base-image-path + $image}');
+}
+
+// Returns the base icon directory
+// 
+// markup: background-image: icon('myicon.png');
+// 
+// $image - The image file, EG myicon.png
+//
+// Styleguide Mixins - Functions - Icon Path
+@function icon($image) {
+	@return url('#{$base-icon-path + $image}');
+}
+
+// Returns the base graphic directory
+// 
+// markup: background-image: graphic('illustration.png');
+// 
+// $image - The image file, EG illustration.png
+//
+// Styleguide Mixins - Functions - Graphic Path
+@function graphic($image) {
+	@return url('#{$base-graphic-path + $image}');
+}
+
+// Returns a z-index layer
+// 
+// markup: z-index: layer(modal);
+// 
+// $layer - The name of the layer (see _variables.scss)
+//
+// Styleguide Mixins - Functions - Layer
+@function layer($layer) {
+	@if not map-has-key($layers, $layer) {
+		@warn "No layer found for `#{$layer}` in $layers map. Property omitted.";
+	}
+ 
+	@return map-get($layers, $layer);
+}
+
+// Returns a colour from the style palettes map
+// 
+// markup: background-color: colour($palette, $tone);
+// 
+// $palette - The name of the pallete, EG: 'accents'
+// $tone - The colour variant, EG: 'primary'
+//
+// Styleguide Mixins - Functions - Colour
+@function colour($palette, $tone: 'base') {
+	@return map-get(map-get($palettes, $palette), $tone);
+}
