@@ -15,6 +15,9 @@
 
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary" />
+		{% if site.twitter_username %}
+			<meta name="twitter:site" content="{{ site.twitter_username }}">
+		{% endif %}
 		<meta name="twitter:site" content="@publisher_handle">
 
 		<meta name="twitter:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}" />
