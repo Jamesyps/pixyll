@@ -10,10 +10,13 @@
 $palettes: (
 	'copy': (
 		base: #30485F,
-		pale: #91A6A7
+		pale: #4D5860
 	),
 	'accent': (
 		base: #07A2B1
+	),
+	'border': (
+		base: #F0F0F0
 	)
 );
 
@@ -28,16 +31,16 @@ $fonts: (
 		)
 	),
 	body: (
-		stack: ('lato', 'helvetica', sans-serif),
+		stack: ('Merriweather Sans', 'helvetica', sans-serif),
 		weights: (
 			regular:  300,
-			bold:     900
+			bold:     700
 		)
 	),
 );
 
-$base-font-size: 17;
-$base-font-line: 26;
+$base-font-size: 18;
+$base-font-line: 28;
 
 // DIRECTORIES
 // ==========================================================================

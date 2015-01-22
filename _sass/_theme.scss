@@ -100,7 +100,7 @@ body {
 	}
 
 	.intro__sub {
-		@include font('body', 'regular');
+		@include font('headers', 'regular');
 		@include font-size(24);
 		@include line-height(24);
 
@@ -108,7 +108,48 @@ body {
 	}
 
 	span {
-		@include font('body', 'bold');
+		@include font('headers', 'bold');
+	}
+}
+
+// ==========================================================================
+
+// POSTS
+// Post excerpts and full articles
+
+// ==========================================================================
+.post-list {
+	@include gs-span(d, 4, 9, $ie: true);
+	text-align: center;
+	margin-top: -30px;
+
+	.post {
+		margin-top: 100px;
+
+		.post-title {
+			@include font('headers', 'bold');
+			@include font-size(40);
+			@include line-height(50);
+
+			margin: 0 0 30px;
+			color: colour('copy');
+		}
+
+		.post-summary {
+			margin: 0 0 10px;
+			color: colour('copy', 'pale');
+		}
+
+		.post-datetime {
+			@include font-size(12);
+			@include line-height(12);
+
+			color: darken(colour('border'), 20%);
+		}
+
+		> * {
+			text-decoration: none;
+		}
 	}
 }
 
