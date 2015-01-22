@@ -57,6 +57,14 @@ body {
 	}
 }
 
+p {
+	margin: 30px 0 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
 // ==========================================================================
 
 // HEADER & PRIMARY NAV
@@ -67,7 +75,7 @@ body {
 	padding: 50px 0;
 
 	.site-title {
-		@include font('body', 'regular');
+		@include font('headers', 'regular');
 		@include font-size(24);
 		@include line-height(24);
 
@@ -155,6 +163,10 @@ body {
 		> * {
 			text-decoration: none;
 		}
+
+		&:hover .post-title {
+			color: colour('accent');
+		}
 	}
 }
 
@@ -190,7 +202,7 @@ body {
 .post-full {
 	.post-body {
 		@include gs-span(d, 3, 10, $ie: true);
-		padding: 50px 0;
+		padding: 80px 0 0;
 	}
 
 	h1 {
@@ -229,7 +241,72 @@ body {
 
 // ==========================================================================
 
+// CONTROLS
+// Pagination, Buttons and other actionable elements
+
+// ==========================================================================
+.pagination {
+	@include gs-span(d, 3, 10, $ie: true);
+	
+	margin-top: 100px;
+	clear: both;
+
+	border-top: 1px solid colour('border');
+	padding-top: 40px;
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+}
+
+.button {
+	@include font('headers', 'regular');
+
+	display: inline-block;
+
+	border: 1px solid colour('border');
+	border-radius: 24px;
+
+	padding: 8px 24px;
+
+	text-decoration: none;
+	color: darken(colour('border'), 20%);
+}
+
+a.button {
+	&:hover {
+		border: 1px solid colour('accent');
+		color: colour('accent');
+	}
+}
+
+// ==========================================================================
+
 // FOOTER
 // Site Footer
 
 // ==========================================================================
+.site-footer {
+	color: darken(colour('border'), 20%);
+	text-align: center;
+
+	padding: 40px 0;
+
+	.copy {
+		@include font-size(12);
+		@include line-height(12);
+	}
+
+	a {
+		color: colour('accent');
+		font-style: italic;
+
+		&:hover {
+			color: invert(colour('accent'));
+		}
+	}
+}
