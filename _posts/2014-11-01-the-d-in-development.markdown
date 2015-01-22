@@ -2,6 +2,7 @@
 layout: post
 title: The 'D' in Development
 date: '2014-11-01 18:56:08'
+summary: Geek Mental Health week exposes the darker side of the creative industry, here I share how I fell into the trap of working myself to the edge of sanity.
 categories: personal
 ---
 

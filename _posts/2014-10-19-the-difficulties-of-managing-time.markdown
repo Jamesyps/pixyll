@@ -2,6 +2,7 @@
 layout: post
 title: The Difficulties of Managing Time
 date: '2014-10-19 16:12:51'
+summary: There was once a time, sitting in my student bedroom that I had plenty of time. Those days are now behind me, so can I do with the little time I have spare?
 categories: development
 ---
 

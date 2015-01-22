@@ -2,6 +2,7 @@
 layout: post
 title: Facebook Expat
 date: '2014-11-16 18:50:42'
+summary: The big blue monster that eats your time is gone from my life. The reasons aren't noble, but the surprise is that the world is not so bad once you leave its icy grip.
 categories: personal
 ---
 

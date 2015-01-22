@@ -1,6 +1,7 @@
 ---
 layout: post
 title: '2014: The Year of the Deep Breath'
+summary: 2014 is finally dead, but before it's gone complete I take a step back to summarise just how much I managed to cram into twelve short months.
 date: '2014-12-18 21:28:01'
 ---
 
