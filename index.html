@@ -2,19 +2,28 @@
 layout: default
 ---
 
+<article class="banner">
+	<div class="wrapper">
+		<div class="intro-container">
+			<h1 class="intro">Hello, my name is <span>James</span>.</h1>
+			<p class="intro__sub">I build <span>websites</span>, take <span>photos</span> and <span>write</span>.
+		</div>
+	</div>
+</article>
+
 <div class="home">
 
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+	<div class="posts">
+		{% for post in paginator.posts %}
+			<div class="post">
+				<a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+					<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+					<h3 class="h2 post-title">{{ post.title }}</h3>
+					<p class="post-summary">{{ post.summary }}</p>
+				</a>
+			</div>
+		{% endfor %}
+	</div>
 
-  {% include pagination.html %}
+	{% include pagination.html %}
 </div>

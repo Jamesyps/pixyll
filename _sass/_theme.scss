@@ -61,7 +61,56 @@ body {
 // Main site header
 
 // ==========================================================================
+.site-header {
+	padding: 50px 0;
 
+	.site-title {
+		@include font('body', 'regular');
+		@include font-size(24);
+		@include line-height(24);
+
+		text-decoration: none;
+		color: colour('accent');
+	}
+}
+
+.banner {
+	background: colour('accent');
+	background: -moz-linear-gradient(-45deg,  #6cccc9 0%, #0099ab 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#6cccc9), color-stop(100%,#0099ab));
+	background: -webkit-linear-gradient(-45deg,  #6cccc9 0%,#0099ab 100%);
+	background: -o-linear-gradient(-45deg,  #6cccc9 0%,#0099ab 100%);
+	background: -ms-linear-gradient(-45deg,  #6cccc9 0%,#0099ab 100%);
+	background: linear-gradient(135deg,  #6cccc9 0%,#0099ab 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cccc9', endColorstr='#0099ab',GradientType=1 );
+
+	box-shadow: inset 0 0 15px rgba(#000, 0.1);
+	padding: 100px 0;
+
+	color: #FFF;
+	text-shadow: 2px 2px 2px rgba(#000, 0.1);
+	text-align: center;
+
+	.intro {
+		@include font('body', 'regular');
+		@include font-size(35);
+		@include line-height(35);
+
+		margin: 0 0 10px;
+	}
+
+	.intro__sub {
+		@include font('body', 'regular');
+		@include font-size(24);
+		@include line-height(24);
+
+		margin: 0;
+	}
+
+	span {
+		@include font('body', 'bold');
+	}
+}
 
 // ==========================================================================
 

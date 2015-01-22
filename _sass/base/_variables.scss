@@ -8,11 +8,12 @@
 // COLOR PALETTES
 // ==========================================================================
 $palettes: (
-	'backgrounds': (
-		base: #000
+	'copy': (
+		base: #30485F,
+		pale: #91A6A7
 	),
-	'accents': (
-		action: #F00
+	'accent': (
+		base: #07A2B1
 	)
 );
 
@@ -23,7 +24,7 @@ $fonts: (
 		stack: ('lato', 'helvetica', sans-serif),
 		weights: (
 			regular:  300,
-			bold:     900
+			bold:     700
 		)
 	),
 	body: (
