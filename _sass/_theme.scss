@@ -124,6 +124,28 @@ p {
 	span {
 		@include font('headers', 'bold');
 	}
+
+	// RESPONSIVE 
+	// ==========================================================================
+	@include jacket(responsive) {
+	
+		// TABLET 
+		// ======================================================================
+		@include gs-media(t, min-max) {
+			.banner-content {
+				@include gs-span(t, 2, 7);
+			}
+		}
+	
+		// MOBILE 
+		// ======================================================================
+		@include gs-media(m, max) {
+			.banner-content {
+				@include gs-span(m, all);
+				@include gs-pad(m, padinfull);
+			}
+		}
+	}
 }
 
 // ==========================================================================
@@ -166,6 +188,24 @@ p {
 
 		&:hover .post-title {
 			color: colour('accent');
+		}
+	}
+
+	// RESPONSIVE 
+	// ==========================================================================
+	@include jacket(responsive) {
+	
+		// TABLET 
+		// ======================================================================
+		@include gs-media(t, min-max) {
+			@include gs-span(t, 2, 7);
+		}
+	
+		// MOBILE 
+		// ======================================================================
+		@include gs-media(m, max) {
+			@include gs-span(m, all);
+			@include gs-pad(m, padinfull);
 		}
 	}
 }
@@ -237,6 +277,28 @@ p {
 			color: invert(colour('accent'));
 		}
 	}
+
+	// RESPONSIVE 
+	// ==========================================================================
+	@include jacket(responsive) {
+	
+		// TABLET 
+		// ======================================================================
+		@include gs-media(t, min-max) {
+			.post-body {
+				@include gs-span(t, 2, 7);
+			}
+		}
+	
+		// MOBILE 
+		// ======================================================================
+		@include gs-media(m, max) {
+			.post-body {
+				@include gs-span(m, all);
+				@include gs-pad(m, padinfull);
+			}
+		}
+	}
 }
 
 // ==========================================================================
@@ -260,6 +322,24 @@ p {
 
 	.right {
 		float: right;
+	}
+
+	// RESPONSIVE 
+	// ==========================================================================
+	@include jacket(responsive) {
+	
+		// TABLET 
+		// ======================================================================
+		@include gs-media(t, min-max) {
+			@include gs-span(t, 2, 7);
+		}
+	
+		// MOBILE 
+		// ======================================================================
+		@include gs-media(m, max) {
+			@include gs-span(m, all);
+			@include gs-pad(m, padinfull);
+		}
 	}
 }
 
