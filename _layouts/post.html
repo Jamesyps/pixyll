@@ -7,15 +7,15 @@ layout: default
 {% assign minutes = 1 %}
 {% endif %}
 
-<article class="post-full">
+<article itemscope itemtype="http://schema.org/Article" class="post-full">
 
 	<!-- Banner -->
 	<div class="banner post-header">
 		<div class="wrapper">
 			<div class="banner-content main-col">
-				<h1 class="post-title">{{ page.title }}</h1>
+				<h1 itemprop="name" class="post-title">{{ page.title }}</h1>
 				<p class="post-meta">
-					<time class="post-datetime" datetime="{{ page.date | date: "%c" }}">
+					<time itemprop="datePublished" class="post-datetime" datetime="{{ page.date | date: "%c" }}">
 						{{ page.date | date: "%b %-d, %Y" }}
 					</time>
 					<span class="post-read">{{ minutes }} minute read</span>
@@ -26,7 +26,7 @@ layout: default
 	<!-- ./Banner -->
 
 	<div class="wrapper">
-		<div class="post-body main-col">
+		<div itemprop="articleBody" class="post-body main-col">
 			{{ content }}
 		</div>
 	</div>
