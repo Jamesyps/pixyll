@@ -1,20 +1,14 @@
 ---
-layout: page
-title: About Pixyll
-subtitle: Testing
+layout: center
+title: A little about me
+subtitle: I'll keep it short, don't worry.
 permalink: /about/
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+![James Wigger](/images/me.jpg)
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
+Currently working as a Web Developer at [Root Studio](http://rootstudio.co.uk) in Lincoln UK, I have a strong drive to create beautifully designed, well functioning and fast-loading web projects.
 
-Thanks to the following:
+During the other 16 hours of the day I enjoy cooking, gardening, photography and taking long walks in the countryside.
 
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Solarized](http://ethanschoonover.com/solarized)
+I'm always happy to chat and you can reach me through my [email address](mailto:james.s.wigger@gmail.com) or [@jamesyps](http://twitter.com/jamesyps) on twitter.
