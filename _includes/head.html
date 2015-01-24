@@ -84,4 +84,10 @@
 		</script>
 		<!-- ./Analytics -->
 		{% endif %}
+
+		<script>
+			function loadCSS(e,t,n,r){"use strict";function u(){var t;for(var r=0;r<o.length;r++){if(o[r].href&&o[r].href.indexOf(e)>-1){t=true}}if(t){i.media=n||"all"}else{setTimeout(u)}}var i=window.document.createElement("link");var s=t||window.document.getElementsByTagName("script")[0];var o=window.document.styleSheets;i.rel="stylesheet";i.href=e;i.media="only x";i.onload=r||function(){};s.parentNode.insertBefore(i,s);u();return i}
+
+			function loadJS(e,t){"use strict";var n=window.document.getElementsByTagName("script")[0];var r=window.document.createElement("script");r.src=e;r.async=true;n.parentNode.insertBefore(r,n);if(t&&typeof t==="function"){r.onload=t}return r}
+		</script>
 	</head>

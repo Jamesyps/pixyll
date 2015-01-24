@@ -33,6 +33,12 @@
 		}
 	}
 
+	// Syntax Highlighting
+	loadJS('//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js', function(){
+		hljs.initHighlightingOnLoad();
+	});
+
+	loadCSS('//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/hybrid.min.css');
 	window.onload = bannerAccent;
 </script>
 <!-- ./Scripts -->
