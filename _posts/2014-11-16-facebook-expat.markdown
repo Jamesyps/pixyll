@@ -3,7 +3,7 @@ layout: post
 title: Facebook Expat
 date: '2014-11-16 18:50:42'
 summary: The big blue monster that eats your time is gone from my life. The reasons aren't noble, but the surprise is that the world is not so bad once you leave its icy grip.
-categories: personal
+category: personal
 ---
 
 **Facebook is often seen as an evil intrusion into our lives. Both an annoying compulsion and yet a neccessary way of keeping in touch with those around us. People are often mocked for a seemingly religious devotion to their feeds but at the same time ignore them at your peril as important information passes you by.**

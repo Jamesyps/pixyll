@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+{% assign minutes = content | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+{% assign minutes = 1 %}
+{% endif %}
+
+<article class="post-full">
+
+	<!-- Banner -->
+	<div class="banner post-header">
+		<div class="wrapper">
+			<div class="banner-content main-col">
+				<h1 class="post-title">{{ page.title }}</h1>
+				<p class="post-meta">
+					<time class="post-datetime" datetime="{{ page.date | date: "%c" }}">
+						{{ page.date | date: "%b %-d, %Y" }}
+					</time>
+					<span class="post-read">{{ page.tags | array_to_sentence_string }}</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- ./Banner -->
+
+	<div class="wrapper">
+		<div class="post-body main-col">
+			{{ content }}
+		</div>
+	</div>
+
+</article>
+
+<!-- {% if site.show_related_posts %}
+	<h3 class="related-post-title">Related Posts</h3>
+	{% for post in site.related_posts %}
+		<div class="post ml2">
+			<a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+				<h4 class="post-title">{{ post.title }}</h4>
+				<p class="post-summary">{{ post.summary }}</p>
+			</a>
+		</div>
+	{% endfor %}
+{% endif %} -->

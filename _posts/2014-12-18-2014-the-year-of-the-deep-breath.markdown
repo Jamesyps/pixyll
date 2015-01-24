@@ -3,7 +3,7 @@ layout: post
 title: '2014: The Year of the Deep Breath'
 summary: 2014 is finally dead, but before it's gone complete I take a step back to summarise just how much I managed to cram into twelve short months.
 date: '2014-12-18 21:28:01'
-categories: personal
+category: personal
 ---
 
 **I don't have many traditions, eschewing them more for moving forward with my life unwilling to get trapped in repeating patterns of behaviour for reasons that are soon forgotten. There is one, however I will stick to - and that's having a thoughtful and considered review of my year. A personal appraisal in how I'm doing as a human being.**

@@ -3,7 +3,7 @@ layout: post
 title: Rebuilding BASE
 date: '2014-11-09 12:17:17'
 summary: A quick update explaining how we continuously update our SASS workflow in the studio and why OOCSS is truly the way forward for websites in 2014 and beyond.
-categories: development
+category: development
 ---
 
 BASE is what every new website at the studio where I work is built upon.

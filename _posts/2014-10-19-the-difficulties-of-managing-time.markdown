@@ -3,7 +3,7 @@ layout: post
 title: The Difficulties of Managing Time
 date: '2014-10-19 16:12:51'
 summary: There was once a time, sitting in my student bedroom that I had plenty of time. Those days are now behind me, so can I do with the little time I have spare?
-categories: development
+category: development
 ---
 
 **There was once a time, sitting in my student bedroom that I had plenty of time. I could, if I had been so inclined, have dipped my toes into iOS development. Or alternatively, focused more on design theories and the latest trends. I could even have considered a gap in the market, and produced a minimum-viable product to fill it.**

@@ -3,7 +3,7 @@ layout: post
 title: The 'D' in Development
 date: '2014-11-01 18:56:08'
 summary: Geek Mental Health week exposes the darker side of the creative industry, here I share how I fell into the trap of working myself to the edge of sanity.
-categories: personal
+category: personal
 ---
 
 **With Geek Mental Health week drawing to a close, I thought it would be a good idea to write about my own experiences with mental health and the overall adjustment to working life.**
