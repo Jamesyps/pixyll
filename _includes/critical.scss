@@ -197,6 +197,11 @@ p {
 		// ======================================================================
 		@include gs-media(m, max) {
 			padding: 25px 0;
+
+			.site-title {
+				@include font-size(20);
+				@include line-height(20);
+			}
 		}
 	}
 }
@@ -205,6 +210,39 @@ p {
 	position: absolute;
 	top: -9px;
 	right: 0;
+
+	.button + .button {
+		margin-left: 10px;
+	}
+
+	// RESPONSIVE 
+	// ==========================================================================
+	@include jacket(responsive) {
+	
+		// TABLET 
+		// ======================================================================
+		@include gs-media(t, min-max) {
+	
+		}
+	
+		// MOBILE 
+		// ======================================================================
+		@include gs-media(m, max) {
+			top: -7px;
+
+			.button {
+				@include font-size($base-font-size - 2);
+				@include line-height($base-font-line - 2);
+
+				border-radius: 16px;
+				padding: 6px 20px;
+
+				+ .button {
+					margin-left: 7px;
+				}
+			}
+		}
+	}
 }
 
 .banner {
