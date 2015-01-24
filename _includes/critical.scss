@@ -1,0 +1,232 @@
+@import 'vendor/normalize', 'vendor/csstyle', 'vendor/jacket', 'vendor/gridset';
+@import 'base/variables', 'base/mixins', 'base/tweaks';
+$jacket: responsive;
+// ==========================================================================
+
+// DOCUMENT FORMATTING
+
+// ==========================================================================
+%clearfix {
+	&:after {
+		display: block;
+		clear: both;
+		visibility: hidden;
+		height: 0;
+		font-size: 0;
+		content: ' ';
+	}
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+
+	@include font('body', 'regular');
+	@include font-size($base-font-size);
+	@include line-height($base-font-line);
+
+	color: colour('copy');
+}
+
+.wrapper {
+	@extend %clearfix;
+	
+	position: relative;
+	margin: 0 auto;
+	
+	width: $base-body-width;
+	max-width: $base-body-max-width;
+}
+
+.main-col {
+	@include gs-span(d, 3, 10, $ie: true);
+
+	// RESPONSIVE 
+	// ==========================================================================
+	@include jacket(responsive) {
+	
+		// TABLET 
+		// ======================================================================
+		@include gs-media(t, min-max) {
+			@include gs-span(t, 2, 7);
+		}
+	
+		// MOBILE 
+		// ======================================================================
+		@include gs-media(m, max) {
+			@include gs-span(m, all);
+			@include gs-pad(m, padinfull);
+		}
+	}
+}
+
+.narrow-col {
+	@include gs-span(d, 4, 9, $ie: true);
+
+	// RESPONSIVE 
+	// ==========================================================================
+	@include jacket(responsive) {
+	
+		// TABLET 
+		// ======================================================================
+		@include gs-media(t, min-max) {
+			@include gs-span(t, 2, 7);
+		}
+	
+		// MOBILE 
+		// ======================================================================
+		@include gs-media(m, max) {
+			@include gs-span(m, all);
+			@include gs-pad(m, padinfull);
+		}
+	}
+}
+
+p {
+	margin: 30px 0 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+// ==========================================================================
+
+// HEADER & PRIMARY NAV
+// Main site header
+
+// ==========================================================================
+.site-header {
+	padding: 50px 0;
+
+	.site-title {
+		@include font('headers', 'regular');
+		@include font-size(24);
+		@include line-height(24);
+
+		text-decoration: none;
+		color: colour('accent');
+	}
+}
+
+.banner {
+	background: colour('accent');
+	background: -moz-linear-gradient(-45deg,  #6cccc9 0%, #0099ab 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#6cccc9), color-stop(100%,#0099ab));
+	background: -webkit-linear-gradient(-45deg,  #6cccc9 0%,#0099ab 100%);
+	background: -o-linear-gradient(-45deg,  #6cccc9 0%,#0099ab 100%);
+	background: -ms-linear-gradient(-45deg,  #6cccc9 0%,#0099ab 100%);
+	background: linear-gradient(135deg,  #6cccc9 0%,#0099ab 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cccc9', endColorstr='#0099ab',GradientType=1 );
+
+	box-shadow: inset 0 0 15px rgba(#000, 0.1);
+	padding: 100px 0;
+
+	color: #FFF;
+	text-shadow: 2px 2px 2px rgba(#000, 0.1);
+	text-align: center;
+
+	@include option(dusk) {
+		background: #5d2747;
+		background: -moz-linear-gradient(-45deg,  #5d2747 0%, #3f264d 100%);
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#5d2747), color-stop(100%,#3f264d));
+		background: -webkit-linear-gradient(-45deg,  #5d2747 0%,#3f264d 100%);
+		background: -o-linear-gradient(-45deg,  #5d2747 0%,#3f264d 100%);
+		background: -ms-linear-gradient(-45deg,  #5d2747 0%,#3f264d 100%);
+		background: linear-gradient(135deg,  #5d2747 0%,#3f264d 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d2747', endColorstr='#3f264d',GradientType=1 );
+	}
+
+	.intro {
+		@include font('body', 'regular');
+		@include font-size(35);
+		@include line-height(35);
+
+		margin: 0 0 10px;
+	}
+
+	.intro__sub {
+		@include font('headers', 'regular');
+		@include font-size(24);
+		@include line-height(24);
+
+		margin: 0;
+	}
+
+	span {
+		@include font('headers', 'bold');
+	}
+}
+
+// ==========================================================================
+
+// POSTS
+// Post excerpts and full articles
+
+// ==========================================================================
+.post-list {
+	text-align: center;
+
+	.post {
+		margin-top: 100px;
+
+		.post-title {
+			@include font('headers', 'bold');
+			@include font-size(40);
+			@include line-height(50);
+
+			margin: 0 0 30px;
+			color: colour('copy');
+		}
+
+		.post-summary {
+			margin: 0 0 10px;
+			color: colour('copy', 'pale');
+		}
+
+		.post-datetime {
+			@include font-size(12);
+			@include line-height(12);
+
+			color: darken(colour('border'), 20%);
+		}
+
+		> * {
+			text-decoration: none;
+		}
+
+		&:hover .post-title {
+			color: colour('accent');
+		}
+	}
+}
+
+.post-header {
+	text-align: left;
+
+	.post-title {
+		@include font('body', 'bold');
+		@include font-size(35);
+		@include line-height(35);
+
+		margin: 0 0 10px;
+	}
+
+	.post-meta {
+		@include font('headers', 'bold');
+		@include font-size(16);
+		@include line-height(16);
+
+		margin: 0;
+
+		.post-read {
+			@include font('headers', 'regular');
+		}
+
+		> * {
+			margin-right: 10px;
+		}
+	}
+}
