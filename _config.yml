@@ -34,6 +34,8 @@ redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
 paginate:     3
+not_paginated_categories:
+  - portfolio
 sass:
   style: :compressed
   compressed: true
