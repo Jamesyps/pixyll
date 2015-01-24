@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Pixyll
+subtitle: Testing
 permalink: /about/
 ---
 

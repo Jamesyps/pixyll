@@ -1,11 +1,24 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="h2">{{ page.title }}</h1>
-  </header>
-  <article class="post-content">
-  {{ content }}
-  </article>
+
+<!-- Banner -->
+<article class="banner">
+	<div class="wrapper">
+		<div class="banner-content main-col">
+			<h1 class="intro">{{ page.title }}</h1>
+			{% if page.subtitle != ""  %}
+			<p class="intro__sub">{{ page.subtitle }}</p>
+			{% endif %}
+		</div>
+	</div>
+</article>
+<!-- ./Banner -->
+
+<div class="page post-full">
+	<div class="wrapper">
+		<article class="post-body main-col">
+			{{ content }}
+		</article>
+	</div>
 </div>
