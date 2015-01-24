@@ -21,6 +21,7 @@ layout: default
 		<!-- Post List -->
 		<div class="post-list narrow-col">
 			{% for post in paginator.posts %}
+				{% unless post.category == "portfolio"%}
 				<div class="post">
 					<a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
 						<h3 class="post-title">{{ post.title }}</h3>
@@ -29,6 +30,7 @@ layout: default
 						<time class="post-datetime" datetime="{{ post.date | date: "%c" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
 					</a>
 				</div>
+				{% endunless %}
 			{% endfor %}
 		</div>
 		<!-- ./Post List -->
