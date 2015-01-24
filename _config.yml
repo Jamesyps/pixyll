@@ -35,6 +35,7 @@ redcarpet:
 permalink:    pretty
 paginate:     3
 sass:
+  style: :compressed
   compressed: true
 gems:
   - jekyll-sitemap
