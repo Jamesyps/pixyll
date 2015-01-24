@@ -130,20 +130,6 @@
 	}
 }
 
-.button {
-	@include font('headers', 'regular');
-
-	display: inline-block;
-
-	border: 1px solid colour('border');
-	border-radius: 24px;
-
-	padding: 8px 24px;
-
-	text-decoration: none;
-	color: darken(colour('border'), 20%);
-}
-
 a.button {
 	&:hover {
 		border: 1px solid colour('accent');
