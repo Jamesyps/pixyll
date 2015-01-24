@@ -6,3 +6,33 @@
 	</small>
 </div>
 <!-- ./Footer -->
+
+<!-- Scripts -->
+<script>
+	function bannerAccent() {
+		var $banner = document.getElementsByClassName('banner');
+		var hr = new Date().getHours();
+
+		// Set active times
+		var data = [
+			[0, 9, true],
+			[10, 18, false],
+			[19, 24, true]
+		];
+
+		for(var i = 0; i < data.length; i++)
+		{
+			if(hr >= data[i][0] && hr <= data[i][1])
+			{
+				if(data[i][2])
+				{
+					console.log($banner);
+					$banner[0].className += ' --dusk';
+				}
+			}
+		}
+	}
+
+	window.onload = bannerAccent;
+</script>
+<!-- ./Scripts -->
