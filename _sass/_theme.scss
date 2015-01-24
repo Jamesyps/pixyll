@@ -29,6 +29,11 @@
 
 		@include option(center) {
 			text-align: center;
+
+			img {
+				margin-right: auto;
+				margin-left: auto;
+			}
 		}
 	}
 
