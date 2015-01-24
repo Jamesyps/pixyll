@@ -83,6 +83,24 @@ body {
 	@include line-height($base-font-line);
 
 	color: colour('copy');
+
+	// RESPONSIVE 
+	// ==========================================================================
+	@include jacket(responsive) {
+	
+		// TABLET 
+		// ======================================================================
+		@include gs-media(t, min-max) {
+	
+		}
+	
+		// MOBILE 
+		// ======================================================================
+		@include gs-media(m, max) {
+			@include font-size($base-font-size - 2);
+			@include line-height($base-font-line - 2);
+		}
+	}
 }
 
 .wrapper {
@@ -164,6 +182,29 @@ p {
 		text-decoration: none;
 		color: colour('accent');
 	}
+
+	// RESPONSIVE 
+	// ==========================================================================
+	@include jacket(responsive) {
+	
+		// TABLET 
+		// ======================================================================
+		@include gs-media(t, min-max) {
+	
+		}
+	
+		// MOBILE 
+		// ======================================================================
+		@include gs-media(m, max) {
+			padding: 25px 0;
+		}
+	}
+}
+
+.primary-nav {
+	position: absolute;
+	top: -9px;
+	right: 0;
 }
 
 .banner {
@@ -197,7 +238,7 @@ p {
 	.intro {
 		@include font('body', 'regular');
 		@include font-size(35);
-		@include line-height(35);
+		@include line-height(38);
 
 		margin: 0 0 10px;
 	}
@@ -256,6 +297,32 @@ p {
 			color: colour('accent');
 		}
 	}
+
+	// RESPONSIVE 
+	// ==========================================================================
+	@include jacket(responsive) {
+	
+		// TABLET 
+		// ======================================================================
+		@include gs-media(t, min-max) {
+			.post {
+				margin-top: 75px;
+			}
+		}
+	
+		// MOBILE 
+		// ======================================================================
+		@include gs-media(m, max) {
+			.post {
+				.post-title {
+					@include font-size(35);
+					@include line-height(45);
+				}
+
+				margin-top: 50px;
+			}	
+		}
+	}
 }
 
 .post-header {
@@ -264,7 +331,7 @@ p {
 	.post-title {
 		@include font('body', 'bold');
 		@include font-size(35);
-		@include line-height(35);
+		@include line-height(40);
 
 		margin: 0 0 10px;
 	}

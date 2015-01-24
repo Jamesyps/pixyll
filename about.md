@@ -2,6 +2,7 @@
 layout: center
 title: A little about me
 subtitle: I'll keep it short, don't worry.
+summary: Short bio of James Wigger, Lincoln based HTML, PHP, jQuery, Sass Developer.
 permalink: /about/
 ---
 
