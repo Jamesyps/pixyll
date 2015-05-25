@@ -391,6 +391,21 @@ p {
 	}
 }
 
+.portfolio .post-header .post-meta {
+	.post-summary {
+		@include font('headers', 'regular');
+		@include font-size(16);
+		@include line-height(22);
+		display: block;
+	}
+
+	.post-read {
+		@include font('headers', 'bold');
+		display: block;
+		margin-top: 20px;
+	}
+}
+
 // ==========================================================================
 
 // CONTROLS

@@ -1,9 +1,12 @@
 ---
-layout: portfolio
 title: Julies Cupcakes
 summary: Built using Perch CMS, Julie's Cupcakes is the online store-front for a small bakery featuring lots of colour and delicious images throughout.
-categories: portfolio
-tags: Design Perch PHP jQuery
+collection: portfolio
+tags: 
+    - Design 
+    - Perch 
+    - PHP 
+    - jQuery
 accent: "#FF004A"
 ---
 ![Home Page](/images/portfolio/julies-cupcakes/home-page.png)

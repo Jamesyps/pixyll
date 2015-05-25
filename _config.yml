@@ -13,6 +13,20 @@ google_analytics: UA-2001719-4
 show_related_posts: false
 show_post_footers:  false
 
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: portfolio
+
 # Disqus post comments
 # (leave blank to disable Disqus)
 disqus_shortname:

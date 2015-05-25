@@ -15,9 +15,7 @@ layout: default
 			<div class="banner-content main-col">
 				<h1 class="post-title">{{ page.title }}</h1>
 				<p class="post-meta">
-					<time class="post-datetime" datetime="{{ page.date | date: "%c" }}">
-						{{ page.date | date: "%b %-d, %Y" }}
-					</time>
+					<span class="post-summary">{{ page.summary }}</span>
 					<span class="post-read">{{ page.tags | array_to_sentence_string }}</span>
 				</p>
 			</div>

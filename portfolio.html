@@ -7,7 +7,7 @@ layout: default
 	<div class="wrapper">
 		<div class="banner-content main-col">
 			<h1 class="intro">Hello, my name is <span>James</span>.</h1>
-			<p class="intro__sub">I build <span>websites</span>, take <span>photos</span> and <span>write</span>.</p>
+			<p class="intro__sub">Here are some of the projects I am particularly proud of...</p>
 		</div>
 	</div>
 </article>
@@ -20,7 +20,7 @@ layout: default
 
 		<!-- Post List -->
 		<div class="post-list narrow-col">
-			{% for post in site.categories['portfolio'] %}
+			{% for post in site.portfolio %}
 				<div class="post">
 					<a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
 						<h3 class="post-title">{{ post.title }}</h3>
