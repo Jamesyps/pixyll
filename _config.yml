@@ -7,7 +7,7 @@ baseurl:     ""
 url:         "http://jameswigger.co.uk"
 
 # Google analytics
-google_analytics:
+google_analytics: UA-2001719-4
 
 # Optional features
 show_related_posts: false
