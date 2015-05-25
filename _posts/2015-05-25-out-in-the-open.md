@@ -28,6 +28,6 @@ I have spent hours on things I would not normally spend on. Writing documentatio
 
 ![Photoplacer](/images/photoplacer.png)
 
-Going forward, I am excited to join the world of giving back. I feel less afraid of developing openly for personal projects. [Photoplacer](http://photoplacer.jameswigger.co.uk), a simple image placeholding application reached version 1.0 today - complete with its own project page, tests and documentation is my first. The [Jekyll template](https://github.com/Jamesyps/Jekyll-Project-Page) for the project page is the second, and [Briefer](https://github.com/Jamesyps/Briefer) and survey manager will be worked on for the remainder of the year.
+Going forward, I am excited to join the world of giving back. I feel less afraid of developing openly for personal projects. [Photoplacer](http://photoplacer.jameswigger.co.uk), a simple image placeholding application reached version 1.0 today - complete with its own project page, tests and documentation is my first. The [Jekyll template](https://github.com/Jamesyps/Jekyll-Project-Page) for the project page is the second, and [Briefer](https://github.com/Jamesyps/Briefer) a survey manager will be worked on for the remainder of the year.
 
 You can see the rest of my profile here: [https://github.com/Jamesyps](https://github.com/Jamesyps)
