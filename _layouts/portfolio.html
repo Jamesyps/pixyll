@@ -7,10 +7,10 @@ layout: default
 {% assign minutes = 1 %}
 {% endif %}
 
-<article class="post-full">
+<article class="post-full portfolio">
 
 	<!-- Banner -->
-	<div class="banner post-header">
+	<div class="banner post-header" {% if page.accent %} style="background: {{ page.accent }} {% endif %}">
 		<div class="wrapper">
 			<div class="banner-content main-col">
 				<h1 class="post-title">{{ page.title }}</h1>

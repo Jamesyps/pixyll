@@ -37,6 +37,11 @@
 		}
 	}
 
+    &.portfolio img {
+        margin-left: -15%;
+        max-width: 130%;
+    }
+
 	img {
 		display: block;
 		max-width: 100%;
@@ -116,6 +121,15 @@
 					width: auto;
 				}
 			}
+
+            &.portfolio {
+                overflow-x: hidden;
+            }
+
+            &.portfolio img {
+                max-width: 112%;
+                margin-left: -6%;
+            }
 		}
 	}
 }
