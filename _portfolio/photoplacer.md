@@ -28,5 +28,5 @@ Accompanying this project, a [re-usable Jekyll template](https://github.com/Jame
 
 You can see more by visiting the project page and source code.
 
-* [Project Page](http://placephoto.jameswigger.co.uk)
+* [Project Page](http://photoplacer.jameswigger.co.uk)
 * [Repository](https://github.com/Jamesyps/Photoplacer)
