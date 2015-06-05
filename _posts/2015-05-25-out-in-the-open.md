@@ -12,9 +12,9 @@ Would you want to see a cake before its sugary coating is complete? Who wants to
 
 ![Commit History](/images/out-in-the-open.png)
 
-Well... actually, me. I love seeing past commits - it's usually one of the first things I do when I stumble on a new library or a friend shows me their project. It's interesting to see the work come together, the thought processes and at times the frustrations show through. I'm also pretty sure I am not alone in this.
+Well... actually, me. I love seeing past commits - it's usually one of the first things I do when I stumble on a new library or a friend shows me their project. It's interesting to see the work come together, the thought processes and at times the frustrations that show through. I'm also pretty sure I am not alone in this.
 
-Which begs the question - why is it so daunting? I think in part because we are all afraid of having something we deeply care about be shown to be rubbish. People often talk about believing in yourself, having confidence but we all know the disdain and the hatred pour on anyone who seems to think above where they are. It's a strange dichotomy of building people up to want to show things, but crushing them when they do if they use the wrong phase, miss the wrong convention or just don't have the answer the crowd is seeking.
+Which begs the question - why is it so daunting? I think in part because we are all afraid of having something we deeply care about be shown to be rubbish. People often talk about believing in yourself, having confidence but we all know the disdain and the hatred poured on anyone who seems to think above where they are. It's a strange dichotomy of building people up to want to show things, but crushing them when they do if they use the wrong phrase, miss the wrong convention or just don't have the answer the crowd is seeking.
 
 The doubts creep into yourself. Am I falling into the trap of thinking I'm ready when in fact I know almost nothing? What happens if people take one look and dismiss me as a terrible developer with no hope for the future? An extreme example - I doubt even the most blood-craving comment frenzy would say that but no one is a tougher critic than the one who knows you best - yourself.
 
@@ -22,9 +22,9 @@ This is why I've been hiding in the private repositories. At times almost waitin
 
 ### Do please, step inside.
 
-Since considering moving into the open I have found a new drive to better myself. Testing, a concept I had always meant to get around to suddenly became a top priority. Opening up an open source project without tests? Even if they aren't quite as good as they should be to not do any would be to turn up to a dinner party in your underwear - yes, everyone can see everything but they sure won't like it.
+Since considering moving into the open I have found a new drive to better myself. Testing, a concept I had always meant to get around to, suddenly became a top priority. Publishing an open source project without tests? Even if they aren't quite as good as they should be to not do any would be to turn up to a dinner party in your underwear - yes, everyone can see everything but they sure won't like it.
 
-I have spent hours on things I would not normally spend on. Writing documentation, making sure the setup process is not a quagmire of config editing and even enabling options so others can easily create their own experiences typically becomes an afterthought - but soon became a top priority as the projects having taken shape.
+I have spent hours on things I would not normally spend on. Writing documentation, making sure the setup process is not a quagmire of config editing and even enabling options so others can easily create their own experiences, usually an afterthought - but soon became a top priority as the project has taken shape.
 
 ![Photoplacer](/images/photoplacer.png)
 
