@@ -1,3 +1,13 @@
+---
+title: Perch Activity Log
+summary: An event based activity log for the Perch CMS. Useful for keeping track which content editors have published changes and viewing the historical differences.
+collection: portfolio
+tags: 
+    - PHP
+    - Perch
+accent: "#563DA3"
+---
+
 The Perch Activity Log app is a bespoke Perch App for monitoring user activity through the CMS. It makes use of the existing Perch API, including the v2.6 update's introduction of events.
 
 ![log-index.png]({{site.baseurl}}/_portfolio/log-index.png)
