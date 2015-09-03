@@ -12,7 +12,9 @@ The Perch Activity Log app is a bespoke Perch App for monitoring user activity t
 
 ![Log Index](/images/portfolio/perch-activity-log/log-index.png)
 
-The listing view was designed to be informative without overloading the user with information as although the app was developed with system administrators in mind, content editors can be granted accessing using the Perch Roles and Priveleges API. The log can be filtered by event type or user account, using the controls at the top, giving those with access a simple but powerful way of identifying which content editor has accessed the CMS. These logs are automatically pruned at user configured intervals.
+The listing view was designed to be informative without overloading the user with information as although the app was developed with system administrators in mind, content editors can be granted accessing using the Perch Roles and Priveleges API. 
+
+The log can be filtered by event type or user account, using the controls at the top, giving those with access a simple but powerful way of identifying which content editor has accessed the CMS. These logs are automatically pruned at user configured intervals.
 
 ![Detail View](/images/portfolio/perch-activity-log/detail-view.png)
 
