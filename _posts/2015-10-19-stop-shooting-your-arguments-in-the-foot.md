@@ -20,7 +20,7 @@ So why frame it through the angle of "I should be rewarded because I *actually* 
 
 > We’re the ones who’ve mastered social media, who have the energy of a thousand suns, and who will knock back 5-dollar macchiatos until the job is done perfectly.
 
-This first example sets up an Us vs You confrontation, implying that the 'millennial' worker is something to be sought after because *they are needed.* Why? Where is the justification beyond doing their job and being able to tweet? Do other workers not want the job done perfectly? Youthful enthusiasm and senior experience need to work together, not be contrasted. A large part of my bosses job is reigning in my more crazy, money-losing ideas and pointing me on the best track for the business - for all employees, not a wannabe 'rockstar'. 
+This first example sets up an Us vs You confrontation, implying that the 'millennial' worker is something to be sought after because *they are needed.* Why? Where is the justification beyond doing their job and being able to tweet? Do other workers not want the job done perfectly? Youthful enthusiasm and senior experience need to work together, not be contrasted. A large part of my boss's job is reigning in my more crazy, money-losing ideas and pointing me on the best track for the business - for all employees, not a wannabe 'rockstar'. 
 
 > But I don’t wake up at 6AM every day to play foosball in the break room.
 
