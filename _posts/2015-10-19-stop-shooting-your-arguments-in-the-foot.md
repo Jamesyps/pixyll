@@ -36,8 +36,6 @@ If the author's point is that a good manager will let you in on the bigger pictu
 
 This is not as harmful as the other extracts, and it goes with the point above - it is very true that as an employee having an attachment to the business on a personal level is one of the better motivators than increases of money or responsibility. But ultimately, as above - why it is anyone's responsibility to make goals and fulfilment for you is a strange request.
 
----
-
 I don't want to end this article as a mudslinging effort. Too many articles in the development world and beyond are simply tit-for-tat he's wrong / she's wrong / you're all wrong without saying what is good or taking better points from people's arguments.
 
 In context, the focus of this post is an article written on LinkedIn to a clearly american audience. I am no expert but through reading online, work culture across the pond can be very different to the UK / Europe. Likewise, I have no experience in working for larger corporations. 
