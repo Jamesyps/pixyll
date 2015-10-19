@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Stop Shooting Your Arguments in the Foot
 date: "2015-10-19"
