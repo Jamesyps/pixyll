@@ -1,6 +1,11 @@
 ---
-published: false
+layout: post
+title: The Boardroom
+date: "2016-08-04"
+summary: "Sometimes the question needs to be asked for you to realise there is a problem."
+category: personal
 ---
+
 > "Are you ok?"
 
 An innocuous question asked across the boardroom table. There was no hint of threat in the question, a question that I have no doubt my boss already knew the answer to.
